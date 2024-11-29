@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="geral.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+            <div class="criarConta" id="criarConta">
+                <h1>Criar sua conta</h1>
+                <br>
+                <div class="campo">
+                    <input type="text" id="nome" maxlength="50" oninput="updateCounter('nome')" placeholder=" " />
+                    <label for="nome">Nome:</label>
+                    <span class="char-counter" id="char-counter-nome">0 / 50</span>
+                </div>
+                <br>
+                <div class="campo">
+                    <input type="text" id="sobrenome" maxlength="50" oninput="updateCounter('sobrenome')" placeholder=" " />
+                    <label for="sobrenome">Sobrenome:</label>
+                    <span class="char-counter" id="char-counter-sobrenome">0 / 50</span>
+                </div>
+                <br>
+                <div class="campo">
+                    <input type="text" id="rg" maxlength="12" oninput="updateCounter('rg')" placeholder=" " />
+                    <label for="rg">RG:</label>
+                    <span class="char-counter" id="char-counter-rg">0 / 12</span>
+                </div>
+                <br>
+                <div class="campo">
+                    <input type="email" id="email" maxlength="100" oninput="updateCounter('email')" placeholder=" " />
+                    <label for="email">Email:</label>
+                    <span class="char-counter" id="char-counter-email">0 / 30</span>
+                </div>
+                <br>
+                <div class="campo">
+                    <input type="password" id="senha" maxlength="20" oninput="updateCounter('senha')" placeholder=" " />
+                    <label for="senha">Senha:</label>
+                    <span class="char-counter" id="char-counter-senha">0 / 20</span>
+                </div>
+        
+                <button onclick="avançarCriar()" class="botaoAvancar">
+                    Avançar
+                </button>
+            </div>
+    </main>
+</body>
+</html>

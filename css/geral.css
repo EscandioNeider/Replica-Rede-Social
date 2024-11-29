@@ -1,0 +1,413 @@
+@font-face {
+    font-family: "Chirp-Heavy";
+    src: url(../fontes/Chirp-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "Chirp-Bold";
+    src: url(../fontes/Chirp-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fontes/Roboto-Light.ttf);
+}
+body {
+    background-color: black;
+    scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+    color: white; 
+    font-family: "Chirp-Heavy";
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+}
+
+/* HOME */
+.containerHome{
+    gap: 280px;
+}
+
+.esquerda img {
+    width: 510px;
+}
+
+.esquerda {
+    margin-left: 240px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.titulo1, .titulo2 {
+    font-weight: bold;
+    padding: 10px 0;
+    transform: scale(1, 0.8);
+    display: inline-block; /* Necessário para o transform funcionar */
+}
+
+.titulo1 {
+    font-size: 68px;
+}
+
+.titulo2 {
+    font-size: 38px;
+}
+
+.direita {
+    color: #fff;
+    padding: 55px;
+    margin-top: 95px;
+    margin-right: 20px; /* Ajuste a margem para empurrar mais para a direita */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; 
+    right: 0; 
+}
+
+.direita img {
+    padding: 10px;
+}
+
+/* ---BOTÕES--- */
+/* geral */
+.botaoGoogle,
+.botaoApple,
+.botaoCriarConta,
+.botaoEntrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 315px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: none;
+}
+
+.botaoGoogle {
+    background-color: #fff;
+}
+
+.botaoApple {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.botaoGoogle:hover, .botaoApple:hover{
+    background-color: #e8e4e4;
+    transition: background-color 0.3s ease;
+}
+
+.botaoCriarConta {
+    background-color: #359df1;
+    color: #fff;
+}
+
+.botaoCriarConta:hover {
+    background-color: #1a8cd8;
+    transition: 0.3s ease;
+}
+.botaoEntrar {
+    background-color: #000000;
+    color: #359df1;
+    border: 1px solid rgb(83, 100, 113);
+}
+
+.botaoEntrar:hover{
+  background-color: #08141c;
+  transition: 0.3s ease;
+}
+
+.inscreverLink{
+    color: #359df1;
+    text-decoration: none;
+    font-family: "Chirp-Bold";
+}
+
+/* ---"OU"--- */
+.ouSpan {
+    display: flex;
+    align-items: center;
+  }
+
+  .ouSpan::before,
+  .ouSpan::after {
+    content: "";
+    flex: 1;
+    height: 2px; 
+    background-color: red; /
+  }
+
+  .ouSpan span {
+    margin: 0 10px; /* Espaçamento lateral do texto */
+    font-weight: bold;
+  }
+
+  .ouSpan hr{
+    width: 132px; 
+    height: 2px; 
+    background-color:#2f3336; 
+    border: none;
+  }
+
+  /* INSCREVER-SE COM O GOOGLE */
+.container {
+    overflow: hidden;
+    width: 1350px;
+    height: 720px;
+    margin: 50px auto;
+    background-color: #0e0e0e;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    margin-top: 5px;
+    display: flex; /* Layout horizontal só aqui */
+    justify-content: space-between;
+    flex: 1; /* Faz o conteúdo ocupar o restante do espaço */
+}
+
+/* Cabeçalho */
+.cabecalho-google {
+    font-family: "Roboto-Light";
+    display: block;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+.cabecalho-google img {
+    margin-right: 10px;
+}
+
+/* Títulos */
+.googleEsq{
+    /* background-color: aquamarine; */
+    float: left;
+    width: 470px;
+    padding: 10px;
+    font-family: "Roboto-Light";
+}
+
+.googleEsq h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.googleEsq p{
+    font-size: 24px;
+    color: #b0b0b0;
+}
+
+.googleDir {
+    /* background-color: #359df1; */
+    font-family: "Roboto-Light";
+    padding: 10px;
+    width: 600px;
+    float: right;
+    margin-top: 20px;
+}
+
+.googleDir p{
+    font-size: 18px;
+    color: #b0b0b0;
+}
+.contas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contas li, .usar-outra-conta  {
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 12px;
+    border-bottom: 1px solid #707070;
+    cursor: pointer;
+}
+
+.contas li:last-child {
+    border-bottom: none;
+}
+
+.contas img.avatar, .usar-outra-conta img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contas .nome {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contas .email {
+    font-size: 20px;
+    color: #b0b0b0;
+    display: block;
+}
+
+/* "Usar outra conta" */
+ .usar-outra-conta {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+}
+
+.usar-outra-conta span{
+    font-family: "Roboto-Light";
+    font-size: 20px;
+}
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+  /* ---CRIAR CONTA--- */
+  
+  .criarConta {
+    background-color: #000000;
+    max-width: 600px;
+    transform: translate(220%, 20%);
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px; 
+}  
+
+.campo {
+    position: relative;
+    margin-bottom: 40px; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+
+}
+
+input {
+    width: 360px;
+    height: 35px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    background: #000;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #707070;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    font-size: 10px;
+    color: #007bff;
+    top: -10px; 
+    background-color: #000;
+    padding: 0 4px; 
+}
+
+.char-counter {
+    position: absolute;
+    top: -5px; 
+    right: 10px;
+    font-size: 10px;
+    color: #707070;
+    background-color: #000;
+    padding: 2px;
+}
+
+.botaoAvancar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 315px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: "Chirp-Bold";
+    font-size: 14px;
+    border: 1px solid #707070;
+    background-color: #000;
+    color: #007bff;}
+
+    .botaoAvancar:hover{
+    background-color: #08141c;
+    transition: 0.2s ease;
+    }
+
+/* ---RODAPÉ GERAL--- */
+footer {
+    color: rgb(113, 118, 123);
+    font-size: 14px; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav a {
+    cursor: pointer;
+    color: rgb(113, 118, 123);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: white;
+}

@@ -104,15 +104,8 @@ main{
     font-family: Arial, sans-serif;
     font-size: 14px;
     border: none;
-}
-.botaoGoogle a,
-.botaoApple a,
-.botaoCriarConta a,
-.botaoEntrar a {
     text-decoration: none;
-
 }
-
 
 .botaoGoogle {
     background-color: #fff;

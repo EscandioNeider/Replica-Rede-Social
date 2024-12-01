@@ -105,6 +105,14 @@ main{
     font-size: 14px;
     border: none;
 }
+.botaoGoogle a,
+.botaoApple a,
+.botaoCriarConta a,
+.botaoEntrar a {
+    text-decoration: none;
+
+}
+
 
 .botaoGoogle {
     background-color: #fff;
@@ -248,10 +256,16 @@ main{
 
 .contas li, .usar-outra-conta  {
     display: flex;
-    padding-bottom: 40px;
-    padding-top: 12px;
-    border-bottom: 1px solid #707070;
+    padding-bottom: 26px;
+    padding-top: 26px;
     cursor: pointer;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.contas a{
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .contas li:last-child {
@@ -281,10 +295,11 @@ main{
 
 /* "Usar outra conta" */
  .usar-outra-conta {
+    margin-top: -30px;
     width: 600px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #707070;
+
 }
 
 .usar-outra-conta span{
@@ -491,6 +506,34 @@ label {
     background-color: #08141c;
     transition: 0.2s ease;
     }
+
+    /* ---ENTRAR--- */
+    .container-entrar{
+        max-width: 600px;
+        transform: translate(110%, 25%);
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center; 
+        padding: 20px; 
+        }
+
+        .container-entrar .campo{
+        position: relative;
+        width: 100%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        }
+
+        .container-entrar input{
+            width: 300px;
+        }
+
+       .botoes-entrar, .cadastro-entrar{
+            padding: 15px;
+       }
 
 /* ---RODAPÉ GERAL--- */
 footer {

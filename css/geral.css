@@ -26,6 +26,19 @@ main{
     display: flex;
 }
 
+.p-nao-tem-conta{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto-Light";
+}
+
+.p-nao-tem-conta a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    color: #007bff;
+}
+
 /* HOME */
 .containerHome{
     gap: 280px;
@@ -143,8 +156,7 @@ main{
   .ouSpan::after {
     content: "";
     flex: 1;
-    height: 2px; 
-    background-color: red; /
+    height: 2px;  /
   }
 
   .ouSpan span {
@@ -160,7 +172,7 @@ main{
   }
 
   /* INSCREVER-SE COM O GOOGLE */
-.container {
+.containerG {
     overflow: hidden;
     width: 1350px;
     height: 720px;
@@ -279,31 +291,125 @@ main{
     font-family: "Roboto-Light";
     font-size: 20px;
 }
-/* Rodapé */
-footer {
-    margin-top: 20px;
+
+/* INSCREVER-SE COM O APPLE */
+.container-apple {
+    overflow: hidden;
+    width: 1350px;
+    height: 620px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-apple {
+    font-family: "Roboto-Light", sans-serif;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 20px;
+    color: #3a3a3a; 
     text-align: center;
 }
 
-footer nav a {
-    color: #b0b0b0;
-    text-decoration: none;
-    margin: 0 10px;
+.cabecalho-apple img{
+    padding: 12px;
+}
+
+.cabecalho-apple2 {
+    font-family: "Roboto-Light", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+    font-size: 20px;
+    color: #3a3a3a; /* Consistência com o cabeçalho */
+    text-align: center;
+}
+
+.cadastro-apple {
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campoApple {
+    width: 360px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.campoApple input {
+    font-size: 16px;
+    outline: none;
+    color: #000000;
+    border: 1px solid #86868b;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.campoApple input:focus{
+    border-color: #007bff;
+}
+
+.campoApple label {
+    position: absolute; 
+    top: 10px; 
+    left: 10px;
     font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    pointer-events: none; 
+    transition: all 0.3s ease; 
 }
 
-footer nav a:hover {
-    text-decoration: underline;
+.campoApple input:focus + label,
+.campoApple input:not(:placeholder-shown) + label {
+    font-size: 10px; 
+    color: #007bff;
+    top: -10px;
+    left: 8px; 
+    background-color: white; 
+    padding: 0 4px; 
 }
 
+.avancarApple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 315px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: "Chirp-Bold";
+    font-size: 14px;
+    border: 1px solid #707070;
+    background-color: #efefef;
+    color: #000;
+}
 
-
-  /* ---CRIAR CONTA--- */
-  
-  .criarConta {
+.avancarApple:hover{
+    background-color: #e8e4e4;
+    border-color: #007bff;
+    color: #007bff;
+    transition: 0.3s ease;
+}
+ /* ---CRIAR CONTA--- */
+ .criarConta {
     background-color: #000000;
     max-width: 600px;
-    transform: translate(220%, 20%);
+    transform: translate(190%, 10%);
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -348,8 +454,8 @@ label {
     transition: 0.2s ease;
 }
 
-input:focus + label,
-input:not(:placeholder-shown) + label {
+.criarConta input:focus + .criarConta label,
+.criarConta input:not(:placeholder-shown) + .criarConta label {
     font-size: 10px;
     color: #007bff;
     top: -10px; 
@@ -379,7 +485,7 @@ input:not(:placeholder-shown) + label {
     font-size: 14px;
     border: 1px solid #707070;
     background-color: #000;
-    color: #007bff;}
+    color: #359df1;}
 
     .botaoAvancar:hover{
     background-color: #08141c;

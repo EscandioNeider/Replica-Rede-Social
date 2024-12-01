@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="geral.js"></script>
     <title>Inscrever-se com o Apple</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 36px;
-            color: #ff6347;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Nada para ver aqui</h1>
-        <p>Site em andamento. Em breve estará disponível!</p>
-    </div>
+<body style="background-color: white;">
+    <main class="container-apple">
+        <div class="cabecalho-apple">
+            <img src="img/icone-apple.svg" width="20px">
+            <h4>Conta Apple</h4>
+        </div>
+        <div class="cabecalho-apple2">
+            <img src="img/twitter-logo-2.svg" width="92px" style="border-radius: 15px;">
+            <p>Use sua Conta Apple para iniciar sessão em X.</p>
+        </div>
+
+        <div class="cadastro-apple">
+            <div class="campoApple">
+
+            <div class="campoApple">
+                <input type="email" id="email" placeholder=" " />
+                <label for="email">Email:</label>
+            </div>
+            <br>
+            <div class="campoApple">
+                <input type="password" id="senha" placeholder=" " />
+                <label for="senha">Senha:</label>
+            </div>
+
+            <button onclick="avançarCriar()" class="avancarApple">
+                Avançar
+            </button>
+        </div>
+        <p class="p-nao-tem-conta">Não tem uma conta no X? Crie uma conta <a href="criar-conta.html">aqui</a>.</p>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Ajuda</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+        </nav>
+    </footer>
 </body>
+
 </html>

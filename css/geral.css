@@ -1,3 +1,4 @@
+/* ---IMPORTAÇÃO DE FONTES--- */
 @font-face {
     font-family: "Chirp-Heavy";
     src: url(../fontes/Chirp-Heavy.ttf);
@@ -9,9 +10,16 @@
 }
 
 @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
     font-family: "Roboto-Light";
     src: url(../fontes/Roboto-Light.ttf);
 }
+
+/* ---BODY E MAIN--- */
 body {
     background-color: black;
     scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
@@ -41,7 +49,7 @@ main{
 
 /* HOME */
 .containerHome{
-    gap: 280px;
+    gap: 250px;
 }
 
 .esquerda img {
@@ -49,8 +57,8 @@ main{
 }
 
 .esquerda {
-    margin-left: 240px;
-    margin-top: 130px;
+    margin-left: 280px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,25 +66,24 @@ main{
 }
 
 .titulo1, .titulo2 {
-    font-weight: bold;
-    padding: 10px 0;
-    transform: scale(1, 0.8);
+    padding: 14px 0;
+    transform: scale(1, 0.9); /* Transform que achata o texto */
     display: inline-block; /* Necessário para o transform funcionar */
 }
 
 .titulo1 {
-    font-size: 68px;
+    font-size: 70px;
 }
 
 .titulo2 {
-    font-size: 38px;
+    font-size: 36px;
 }
 
 .direita {
-    color: #fff;
-    padding: 55px;
-    margin-top: 95px;
-    margin-right: 20px; /* Ajuste a margem para empurrar mais para a direita */
+    color:#e7e9ea;
+    padding: 25px;
+    margin-top: 140px;
+    margin-left: 15px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -88,8 +95,22 @@ main{
     padding: 10px;
 }
 
+.ao-se-inscrever{
+    transform: scale(1, 0.95);
+    font-family: "Roboto-Light";
+    text-overflow: unset;
+    color: rgb(113, 118, 123);
+    width: 300px;
+    font-size: 11px;
+}
+
+.ao-se-inscrever a{
+    transform: scale(1, 0.95);
+    font-family: "Roboto-Light";
+    text-decoration: none;
+    color: #2f98ec;
+}
 /* ---BOTÕES--- */
-/* geral */
 .botaoGoogle,
 .botaoApple,
 .botaoCriarConta,
@@ -98,20 +119,21 @@ main{
     justify-content: center;
     align-items: center;
     height: 44px;
-    width: 315px;
-    margin: 10px 0;
+    width: 300px;
+    margin: 2px 0;  /* distância entre os botões */
     border-radius: 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    border: none;
     text-decoration: none;
 }
 
 .botaoGoogle {
+    font-family: "Roboto-Regular";
     background-color: #fff;
 }
 
 .botaoApple {
+    font-family: "Chirp-Heavy";
     background-color: #fff;
     font-weight: 700;
 }
@@ -121,16 +143,24 @@ main{
     transition: background-color 0.3s ease;
 }
 
+.botaoGoogle img,
+.botaoApple img{
+    padding: 10px;
+}
+
 .botaoCriarConta {
+    font-family: "Chirp-Heavy";
     background-color: #359df1;
     color: #fff;
 }
 
 .botaoCriarConta:hover {
+    font-family: "Chirp-Heavy";
     background-color: #1a8cd8;
     transition: 0.3s ease;
 }
 .botaoEntrar {
+    font-family: "Chirp-Heavy";
     background-color: #000000;
     color: #359df1;
     border: 1px solid rgb(83, 100, 113);
@@ -151,6 +181,8 @@ main{
 .ouSpan {
     display: flex;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .ouSpan::before,
@@ -162,7 +194,8 @@ main{
 
   .ouSpan span {
     margin: 0 10px; /* Espaçamento lateral do texto */
-    font-weight: bold;
+    font-family: "Roboto-Light";
+    font-size: 15px;
   }
 
   .ouSpan hr{
@@ -194,7 +227,7 @@ main{
 }
 
 /* Cabeçalho */
-.cabecalho-google {
+.cabecalho-google, .cabecalho-google-2{
     font-family: "Roboto-Light";
     display: block;
     align-items: center;
@@ -202,6 +235,9 @@ main{
     border-bottom: 1px solid #3a3a3a;
     font-size: 20px;
     color: #e0e0e0;
+}
+.cabecalho-google-2{
+    color: #242421;
 }
 
 .cabecalho-google img {
@@ -392,7 +428,7 @@ main{
     padding: 0 4px; 
 }
 
-.avancarApple{
+.avancar-branco{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,15 +439,15 @@ main{
     font-family: "Chirp-Bold";
     font-size: 14px;
     border: 1px solid #707070;
-    background-color: #efefef;
+    background-color: #ffffff;
     color: #000;
 }
 
-.avancarApple:hover{
+.avancar-branco:hover{
     background-color: #e8e4e4;
     border-color: #007bff;
     color: #007bff;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
  /* ---CRIAR CONTA--- */
  .criarConta {
@@ -448,38 +484,7 @@ input {
     background: #000;
 }
 
-input:focus {
-    border-color: #007bff;
-}
-
-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 14px;
-    color: #707070;
-    pointer-events: none;
-    transition: 0.2s ease;
-}
-
-.criarConta input:focus + .criarConta label,
-.criarConta input:not(:placeholder-shown) + .criarConta label {
-    font-size: 10px;
-    color: #007bff;
-    top: -10px; 
-    background-color: #000;
-    padding: 0 4px; 
-}
-
-.char-counter {
-    position: absolute;
-    top: -5px; 
-    right: 10px;
-    font-size: 10px;
-    color: #707070;
-    background-color: #000;
-    padding: 2px;
-}
+/*  */
 
 .botaoAvancar{
     display: flex;
@@ -531,8 +536,9 @@ label {
 /* ---RODAPÉ GERAL--- */
 footer {
     color: rgb(113, 118, 123);
-    font-size: 14px; 
-    padding: 20px 0;
+    font-size: 13px; 
+    font-family: "Roboto-Light";
+    margin-top: 100px;
     text-align: center;
 }
 

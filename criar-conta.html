@@ -6,6 +6,51 @@
     <link rel="stylesheet" href="css/geral.css">
     <script src="geral.js"></script>
     <title>Cadastro</title>
+    <style>
+        .criarConta input:focus {
+            border-color: #359df1;
+        }
+        
+        .criarConta label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: #707070;
+            pointer-events: none;
+            transition: 0.2s ease;
+        }
+        
+        .criarConta label {
+            font-size: 16px; 
+            color: #707070;
+            position: absolute; 
+            top: 10px; 
+            left: 10px; 
+            transition: all 0.3s ease;
+            background-color: transparent; 
+            padding: 0;
+        }
+        
+        .criarConta input:focus + label,
+        .criarConta input:not(:placeholder-shown) + label {
+            font-size: 12px;
+            color: #359df1; 
+            top: -8px; 
+            background-color: #000; 
+            padding: 0 4px; 
+        }
+        
+        .char-counter {
+            position: absolute;
+            top: -5px; 
+            right: 10px;
+            font-size: 10px;
+            color: #707070;
+            background-color: #000;
+            padding: 2px;
+        }
+    </style>
 </head>
 <body>
     <main>

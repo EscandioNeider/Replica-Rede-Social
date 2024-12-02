@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login com o Google</title>
     <link rel="stylesheet" href="css/geral.css">
-    <script src="geral.js" defer></script>
+    <script src="geral.js" defer></script> 
 </head>
 <body style="background-color: #1e1f20;">
 
@@ -22,19 +22,18 @@
         </div>
         <div class="googleDir">
             <ul class="contas">
-                <li>
-                    <a href="boas-vindas.html">
-                   
-                        <img src="img/perfil-bruno.png" alt="Avatar" class="avatar">
-                       <div>
-                           <span class="nome">Bruno Messias Aguiar</span>
-                           <span class="email">brunomessias37@gmail.com</span>
-                       </div>
-                   </a>
-                </li> 
-
-                <li>
-                    <a href="boas-vindas.html">
+                <li id="contaBruno">
+                    <a href="insc-google-login.html">
+                        <img src="img/perfil-bruno.png" class="avatar">
+                        <div>
+                            <span class="nome">Bruno Messias Aguiar</span>
+                            <span class="email">brunomessias37@gmail.com</span>
+                        </div>
+                    </a>
+                </li>
+                
+                <li id="contaVisitante">
+                    <a href="insc-google-login.html">
                         <img src="img/avatar.svg" alt="Avatar" class="avatar">
                         <div>
                             <span class="nome">Visitante</span>
@@ -42,6 +41,7 @@
                         </div>
                     </a>
                 </li>
+                
                 <li>
                     <div class="usar-outra-conta">
                         <img src="img/avatar.svg" alt="Adicionar conta">
@@ -52,6 +52,11 @@
             <p>Consulte a <a href="#" style="color: #a8c7eb; text-decoration: none;">Política de Privacidade</a> e os <a href="#" style="color: #a8c7eb; text-decoration: none;">Termos de Serviço</a> do app x.com antes de usá-lo.</p>
             <p class="p-nao-tem-conta">Não tem uma conta no X? Crie uma conta <a href="criar-conta.html" style="color: #a8c7eb; text-decoration: none;" >aqui</a>.</p>
         </div>
+    </div>
+    <div id="aviso" class="aviso" style="display: none;">
+        <h2 id="titulo-aviso"></h2>
+        <p id="mensagem-aviso"></p>
+        <button onclick="fecharAviso()">Fechar</button>
     </div>
     </main>
 

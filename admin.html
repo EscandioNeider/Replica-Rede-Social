@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca e Edição de RGs</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <script src="geral.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BUSCA E EDIÇÃO DE RGs</h1>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Digite o número do RG" required>
+            <button class="botaoAzul" type="submit">Buscar</button>
+        </form>
+        <div class="result" id="resultSection">
+            <!-- Tabela com Cadastros -->
+            <h3>Informações Encontradas</h3>
+            <form id="editForm">
+                <input type="text" id="rg" placeholder="RG" readonly>
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="sobrenome" placeholder="Sobrenome">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="senha" placeholder="Senha">
+                <button type="button" onclick="salvarAlteracoes()">Salvar Alterações</button>
+            </form>
+        </div>
+        <div class="todos-cad-admin">
+            <h3>TODOS OS CADASTROS</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>SOBRENOME</th>
+                        <th>RG</th>
+                        <th>EMAIL</th>
+                        <th>SENHA</th>
+                    </tr>
+                </thead>
+                <tbody id="cadastro-login">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

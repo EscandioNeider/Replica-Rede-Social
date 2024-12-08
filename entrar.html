@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,10 @@
 <body>
     <div class="container-entrar">
         <h1>Entrar no X</h1>
+        <!-- Opções de Entrada -->
         <div class="botoes-entrar">
+
+            <!-- Botão Google -->
             <a href="insc-google.html" style="text-decoration: none;"><button class="botaoGoogle">
                 <img src="img/icone-google.svg" width="18px"> Inscrever-se no Google
             </button></a>
@@ -25,20 +28,23 @@
         <hr><span>ou</span><hr>
     </div>
 
-    <div class="cadastro-entrar">
+    <div class="cadastro-entrar" id="login">
+        <!-- Email -->
         <div class="campo">
             <input type="email" id="email"  placeholder="Insira seu Email" />
         </div>
+        <!-- Senha -->
         <div class="campo">
             <input type="password" id="senha" placeholder="Insira sua Senha" />
         </div>
-        <a href="boas-vindas.html" style="text-decoration: none;"><button onclick="avançarCriar()" class="botaoAvancar">
+        <!-- Botão para Avançar -->
+        <button class="botaoAvancar" onclick="login()">
             Avançar
-        </button></a>
+        </button>
     </div>
-   
-   
-      <a href="#" style="color: #1d9bf0;">Esqueceu sua senha?</a>
+
+    <!-- Link decorativo -->
+    <a href="#" style="color: #1d9bf0;">Esqueceu sua senha?</a>
 
     </div>
 </body>

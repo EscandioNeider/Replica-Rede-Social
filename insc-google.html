@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,27 @@
 <body style="background-color: #1e1f20;">
 
     <main class="containerG">
+        <!-- Cabecalho de Login -->
         <div class="cabecalho-google">
             <img src="img/icone-google.svg" alt="Ícone Google" width="20px">
             <span>Fazer login com o Google</span>
         </div>
-    <div class="conteudo">
-        <div class="googleEsq">
-            <h1>Escolha uma conta</h1>
-            <br>
-            <p>para prosseguir para x.com</p>
-        </div>
-        <div class="googleDir">
+
+        <!-- Conteúdo Geral -->
+        <div class="conteudo">
+            <!-- Conteúdo - Esquerda da Página -->
+            <div class="googleEsq">
+                <h1>Escolha uma conta</h1>
+                <br>
+                <p>para prosseguir para x.com</p>
+            </div>
+
+            <!-- Conteúdo - Direita da Página -->
+            <div class="googleDir">
+
+            <!-- Contas -->
             <ul class="contas">
+                <!-- Conta do Bruno -->
                 <li id="contaBruno">
                     <a href="insc-google-login.html">
                         <img src="img/perfil-bruno.png" class="avatar">
@@ -31,7 +40,8 @@
                         </div>
                     </a>
                 </li>
-                
+
+                <!-- Conta do Visitante -->
                 <li id="contaVisitante">
                     <a href="insc-google-login.html">
                         <img src="img/avatar.svg" alt="Avatar" class="avatar">
@@ -42,24 +52,20 @@
                     </a>
                 </li>
                 
+                <!-- Usar outra conta -->
                 <li>
                     <div class="usar-outra-conta">
                         <img src="img/avatar.svg" alt="Adicionar conta">
-                        <span>Usar outra conta</span>
+                        <span><a href="criar-conta.html">Usar outra conta</a></span>
                     </div>
                 </li>
             </ul>
+            <!-- Texto decorativo -->
             <p>Consulte a <a href="#" style="color: #a8c7eb; text-decoration: none;">Política de Privacidade</a> e os <a href="#" style="color: #a8c7eb; text-decoration: none;">Termos de Serviço</a> do app x.com antes de usá-lo.</p>
-            <p class="p-nao-tem-conta">Não tem uma conta no X? Crie uma conta <a href="criar-conta.html" style="color: #a8c7eb; text-decoration: none;" >aqui</a>.</p>
         </div>
-    </div>
-    <div id="aviso" class="aviso" style="display: none;">
-        <h2 id="titulo-aviso"></h2>
-        <p id="mensagem-aviso"></p>
-        <button onclick="fecharAviso()">Fechar</button>
-    </div>
     </main>
 
+    <!-- Footer Decorativo -->
     <footer>
         <nav>
             <a href="#">Ajuda</a>

@@ -33,25 +33,210 @@ body {
 main{
     display: flex;
 }
+/* ---ADMIN--- */
 
-.p-nao-tem-conta{
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Roboto-Light";
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.p-nao-tem-conta a{
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Roboto-Light";
-    color: #007bff;
+h1 {
+    text-align: center;
+    color: #e7e9ea;
 }
 
-/* HOME */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="rg"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  #323434;
+    color: #e7e9ea;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #323434;
+    padding: 8px;
+    text-align: left;
+    color: #e7e9ea;
+}
+/* ---BOAS-VINDAS--- */
+.msg-boasVindas {
+    transform: translate(190%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.msg-boasVindas h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+.msg-boasVindas p {
+    font-weight: 100;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+/* ---CRIAR CONTA--- */
+.criarConta {
+    background-color: #000000;
+    max-width: 600px;
+    transform: translate(220%, 10%);
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px; 
+}  
+
+.campo {
+    position: relative;
+    margin-bottom: 40px; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+
+}
+
+input {
+    width: 360px;
+    height: 35px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    background: #000;
+}
+
+.botaoAvancar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 315px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: "Chirp-Bold";
+    font-size: 14px;
+    border: 1px solid #707070;
+    background-color: #000;
+    color: #359df1;}
+
+    .botaoAvancar:hover{
+    background-color: #08141c;
+    transition: 0.2s ease;
+    }
+
+form{
+    gap: 0px;
+}
+
+.criarConta input:focus {
+    border-color: #359df1;
+}
+
+.criarConta label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #707070;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.criarConta label {
+    font-size: 16px; 
+    color: #707070;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    transition: all 0.3s ease;
+    background-color: transparent; 
+    padding: 0;
+}
+
+.criarConta input:focus + label,
+.criarConta input:not(:placeholder-shown) + label {
+    font-size: 12px;
+    color: #359df1; 
+    top: -8px; 
+    background-color: #000; 
+    padding: 0 4px; 
+}
+
+.char-counter {
+    position: absolute;
+    top: -5px; 
+    right: 10px;
+    font-size: 10px;
+    color: #707070;
+    background-color: #000;
+    padding: 2px;
+}
+/* ---ENTRAR--- */
+.container-entrar{
+    max-width: 600px;
+    transform: translate(110%, 25%);
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px; 
+    }
+
+    .container-entrar .campo{
+    position: relative;
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    }
+
+    .container-entrar input{
+        width: 300px;
+    }
+
+   .botoes-entrar, .cadastro-entrar{
+        padding: 15px;
+   }
+
+/* ---HOME--- */
 .containerHome{
     gap: 250px;
 }
 
+/* Separação de divs esquerda e direita*/
 .esquerda img {
     width: 510px;
 }
@@ -110,11 +295,17 @@ main{
     text-decoration: none;
     color: #2f98ec;
 }
-/* ---BOTÕES--- */
+.inscreverLink{
+    color: #359df1;
+    text-decoration: none;
+    font-family: "Chirp-Bold";
+}
+/* botões */
 .botaoGoogle,
 .botaoApple,
-.botaoCriarConta,
-.botaoEntrar {
+.botaoAzul,
+.botaoPreto,
+.botaoBranco {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,36 +339,30 @@ main{
     padding: 10px;
 }
 
-.botaoCriarConta {
+.botaoAzul {
     font-family: "Chirp-Heavy";
     background-color: #359df1;
     color: #fff;
 }
 
-.botaoCriarConta:hover {
+.botaoAzul:hover {
     font-family: "Chirp-Heavy";
     background-color: #1a8cd8;
     transition: 0.3s ease;
 }
-.botaoEntrar {
+.botaoPreto {
     font-family: "Chirp-Heavy";
     background-color: #000000;
     color: #359df1;
     border: 1px solid rgb(83, 100, 113);
 }
 
-.botaoEntrar:hover{
+.botaoPreto:hover{
   background-color: #08141c;
   transition: 0.3s ease;
 }
 
-.inscreverLink{
-    color: #359df1;
-    text-decoration: none;
-    font-family: "Chirp-Bold";
-}
-
-/* ---"OU"--- */
+/* ---"ou"--- */
 .ouSpan {
     display: flex;
     align-items: center;
@@ -204,139 +389,281 @@ main{
     background-color:#2f3336; 
     border: none;
   }
+/*  */
+.p-nao-tem-conta{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto-Light";
+}
 
-  /* INSCREVER-SE COM O GOOGLE */
-.containerG {
-    overflow: hidden;
-    width: 1350px;
-    height: 720px;
-    margin: 50px auto;
-    background-color: #0e0e0e;
-    border-radius: 28px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+.p-nao-tem-conta a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    color: #007bff;
+}
+
+/* ---INICIO PÓS CADASTRO/LOGIN--- */
+.cabecalho-lateral {
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    padding: 16px;
+    margin-left: 370px;
+    border-right: 1px solid #2f3336;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.menu-item {
+    scale: 0.8;
     display: flex;
-    flex-direction: column;
-}
-
-.conteudo{
-    margin-top: 5px;
-    display: flex; /* Layout horizontal só aqui */
-    justify-content: space-between;
-    flex: 1; /* Faz o conteúdo ocupar o restante do espaço */
-}
-
-/* Cabeçalho */
-.cabecalho-google, .cabecalho-google-2{
-    font-family: "Roboto-Light";
-    display: block;
     align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid #3a3a3a;
-    font-size: 20px;
-    color: #e0e0e0;
+    margin: 10px 12px 10px 0px;
+    line-height: 52px;
+    border-radius: 50px;
+    padding-left: 5px;
 }
-.cabecalho-google-2{
-    color: #242421;
-}
-
-.cabecalho-google img {
-    margin-right: 10px;
+.menu-item svg {
+    margin-right: 8px; 
 }
 
-/* Títulos */
-.googleEsq{
-    /* background-color: aquamarine; */
-    float: left;
-    width: 470px;
-    padding: 10px;
+.menu-item span {
+    margin-left: 15px; 
     font-family: "Roboto-Light";
+    font-size: 22px;
 }
 
-.googleEsq h1 {
-    font-size: 50px;
-    margin: 10px 0;
-    color: #ffffff;
+.menu-item:hover{
+    background-color: #3a3a3a69;
 }
-
-.googleEsq p{
-    font-size: 24px;
-    color: #b0b0b0;
-}
-
-.googleDir {
-    /* background-color: #359df1; */
-    font-family: "Roboto-Light";
-    padding: 10px;
-    width: 600px;
-    float: right;
+.botaoBranco {
+    font-family: "Arial", sans-serif;
+    background-color: #fff;
+    color: #000;
+    width: 250px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
     margin-top: 20px;
 }
-
-.googleDir p{
-    font-size: 18px;
-    color: #b0b0b0;
-}
-.contas {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.botaoBranco:hover {
+    background-color: #e6e6e6;
 }
 
-.contas li, .usar-outra-conta  {
-    display: flex;
-    padding-bottom: 26px;
-    padding-top: 26px;
+/* grid-2 */
+.grid-2{
+    transform: translate(120%, 0%);
+    min-height: 100vh;
+    margin-right: 35px;
+    border-right: 1px solid #2f3336;
+}
+
+.botoes-grid-2 button{
+    font-family: "Arial", sans-serif;
+    background-color: #ffffff00;
+    color: #ffffff;
+    width: 270px;
+    font-weight: 700;
+    padding: 20px 40px;
+    margin-left: 0%;
+    border: none;
     cursor: pointer;
-    border-bottom: 1px solid #3a3a3a;
+
 }
 
-.contas a{
+.botoes-grid-2 button:hover{
+    background-color: #181818;
+}
+
+.o-que-esta-sentindo{
     display: flex;
-    cursor: pointer;
-    text-decoration: none;
+    padding: 10px;
 }
 
-.contas li:last-child {
-    border-bottom: none;
-}
-
-.contas img.avatar, .usar-outra-conta img {
+.avatar-sentindo img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
+    background-image: url('img/avatar.svg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 }
 
-.contas .nome {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffffff;
-    display: block;
-    margin-bottom: 5px;
+
+input[type="text"]{
+    width: 400px;
+    border: none;
 }
 
-.contas .email {
-    font-size: 20px;
-    color: #b0b0b0;
-    display: block;
+.sentindo-texto{
+    width: 100%;
 }
-
-/* "Usar outra conta" */
- .usar-outra-conta {
-    margin-top: -30px;
-    width: 600px;
+.itens-sentindo{
+    padding: 10px 10px;
     display: flex;
-    align-items: center;
-
+    flex-direction: row;
 }
 
-.usar-outra-conta span{
+.botao-postar{
+    width: 80px;
+    margin-left: auto;
+    margin-right: 30px;
+    border-radius: 25px;
+    border: 0;
+}
+
+.item-sentindo{
+    margin-right: 8px;
+}
+
+.tweets{
+flex-direction: column;
+}
+
+.tweet, .tweet-final{
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #2f3336;
+    padding: 10px;
+}
+
+.imagem-usuario{
+    flex-shrink: 0;
+}
+
+.usuario{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.imagem-usuario img{
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tweet-textos {
+    margin-left: 10px;
+}
+
+.tweet p {
+    font-weight: 100;
     font-family: "Roboto-Light";
-    font-size: 20px;
+    font-size: 0.95rem;
+    color: #c4c4c4;
+    margin: 0;
 }
 
-/* INSCREVER-SE COM O APPLE */
+.tweet-conteudo span {
+    font-weight: 200;
+    font-family: "Roboto-Regular";
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.tweet-conteudo{
+    gap: 5px;
+}
+
+.tweet-conteudo-img {
+    position: relative;
+    margin-top: 10px;
+}
+
+.tweet-conteudo-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Grid-3 */
+.grid-3{
+    position: fixed;
+    right: 350px;
+}
+
+.divBusca input[type="text"]{
+    border: none;
+    border-radius: 50px;
+}
+
+.assine-premium{
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid #2f3336;
+    border-radius: 15px;
+}
+
+.assine-premium h1, .oq-acontecendo h1{
+    text-align: left;
+    font-size: 25px;
+    color: #ffffff;
+}
+.assine-premium p{
+    margin-top: 0%;
+    font-weight: 100;
+    font-size: 15px;
+    color: #b1b1b1;
+}
+
+.assine-premium button{
+    width: 120px;
+    height: 35px;
+}
+
+.oq-acontecendo {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    padding: 15px; 
+    border: 1px solid #2f3336;
+    border-radius: 15px;
+    color: #ffffff; 
+}
+
+.item-acontecendo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-acontecendo p {
+    font-size: 12px; 
+    font-weight: 400;
+    color: #71767b; 
+    margin: 0;
+}
+
+.item-acontecendo span {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-top: 5px; 
+}
+
+.item-acontecendo a, .tweet-conteudo a{
+    text-overflow: unset;
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+    font-size: 14px; 
+    font-weight: 400;
+}
+
+.oq-acontecendo h1 {
+    font-size: 20px; 
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* ---INCREVER-SE COM APPLE--- */
 .container-apple {
     overflow: hidden;
     width: 1350px;
@@ -351,6 +678,7 @@ main{
     flex-direction: column;
 }
 
+/* Estilos para o cabeçalho */
 .cabecalho-apple {
     font-family: "Roboto-Light", sans-serif;
     display: flex;
@@ -376,7 +704,7 @@ main{
     text-align: center;
 }
 
-.cadastro-apple {
+.login-apple {
     margin-top: 20px; 
     display: flex;
     flex-direction: column;
@@ -449,91 +777,199 @@ main{
     color: #007bff;
     transition: 0.2s ease;
 }
- /* ---CRIAR CONTA--- */
- .criarConta {
-    background-color: #000000;
-    max-width: 600px;
-    transform: translate(190%, 10%);
-    align-items: center;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    text-align: center; 
-    padding: 20px; 
-}  
 
-.campo {
-    position: relative;
-    margin-bottom: 40px; 
-    width: 100%; 
+/* ---INSCREVER-SE COM O GOOGLE--- */
+.containerG {
+    overflow: hidden;
+    width: 1350px;
+    height: 720px;
+    margin: 50px auto;
+    background-color: #0e0e0e;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-
+    flex-direction: column;
 }
 
-input {
-    width: 360px;
-    height: 35px;
-    padding: 8px 10px;
-    font-size: 15px;
-    border: 1px solid #707070;
-    border-radius: 4px;
-    outline: none;
-    color: #fff;
-    background: #000;
+.conteudo{
+    margin-top: 5px;
+    display: flex; /* Layout horizontal só aqui */
+    justify-content: space-between;
+    flex: 1; /* Faz o conteúdo ocupar o restante do espaço */
 }
 
-/*  */
-
-.botaoAvancar{
-    display: flex;
-    justify-content: center;
+/* Cabeçalhos do container*/
+.cabecalho-google, .cabecalho-google-2{
+    font-family: "Roboto-Light";
+    display: block;
     align-items: center;
-    height: 44px;
-    width: 315px;
+    padding: 12px;
+    border-bottom: 1px solid #3a3a3a;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+.cabecalho-google-2{
+    color: #242421;
+}
+
+.cabecalho-google img {
+    margin-right: 10px;
+}
+
+/* Títulos */
+.googleEsq{
+    float: left;
+    width: 470px;
+    padding: 10px;
+    font-family: "Roboto-Light";
+}
+
+.googleEsq h1 {
+    font-size: 50px;
     margin: 10px 0;
-    border-radius: 20px;
-    font-family: "Chirp-Bold";
+    color: #ffffff;
+}
+
+.googleEsq p{
+    font-size: 24px;
+    color: #b0b0b0;
+}
+
+.googleDir {
+    font-family: "Roboto-Light";
+    padding: 10px;
+    width: 600px;
+    float: right;
+    margin-top: 20px;
+}
+
+.googleDir p{
+    font-size: 18px;
+    color: #b0b0b0;
+}
+/* Estilos para o formulario */
+.contas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contas li, .usar-outra-conta  {
+    display: flex;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    cursor: pointer;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.contas a{
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contas li:last-child {
+    border-bottom: none;
+}
+
+.contas img.avatar, .usar-outra-conta img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contas .nome {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contas .email {
+    font-size: 20px;
+    color: #b0b0b0;
+    display: block;
+}
+
+/* "Usar outra conta" */
+ .usar-outra-conta {
+    margin-top: -30px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.usar-outra-conta a {
+    text-decoration: none;
+    color: white;
+}
+
+.usar-outra-conta span{
+    text-decoration: none;
+    font-family: "Roboto-Light";
+    font-size: 20px;
+}
+
+/* ---INSCREVER COM O GOOGLE - LOGIN --- */
+.google-log {
+    overflow: hidden;
+    width: 1230px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto-Light";
+}
+
+.conteudo-g2 {
+    margin-top: 5px;
+    display: flex;
+    gap: 100px;
+}
+
+.googleEsq-2 h1{
+    color:#343c48;
+}
+
+.googleEsq-2{
+    width: 520px;
+}
+
+.googleDir-2 {
+    width: 520px;
+}
+
+.googleDir-2 p {
+    color: #242421;
     font-size: 14px;
-    border: 1px solid #707070;
-    background-color: #000;
-    color: #359df1;}
+    width: 480px;
+}
 
-    .botaoAvancar:hover{
-    background-color: #08141c;
-    transition: 0.2s ease;
-    }
+.googleDir-2 a {
+    font-family: "Roboto-Light";
+    color: rgb(11, 104, 197);
+    text-decoration: none;
+}
 
-    /* ---ENTRAR--- */
-    .container-entrar{
-        max-width: 600px;
-        transform: translate(110%, 25%);
-        align-items: center;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-        text-align: center; 
-        padding: 20px; 
-        }
+.botoes-login-google {
+    margin-top: 150px;
+    display: flex;
+    width: 540px;
+    gap: 8px;
+}
 
-        .container-entrar .campo{
-        position: relative;
-        width: 100%; 
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        }
-
-        .container-entrar input{
-            width: 300px;
-        }
-
-       .botoes-entrar, .cadastro-entrar{
-            padding: 15px;
-       }
-
-/* ---RODAPÉ GERAL--- */
+.botoes-login-google button {
+    width: 230px;
+    height: 35px;
+}
+/* ---FOOTERS--- */
 footer {
     color: rgb(113, 118, 123);
     font-size: 13px; 
@@ -559,3 +995,4 @@ footer nav a {
 footer nav a:hover {
     color: white;
 }
+

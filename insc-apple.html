@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +8,43 @@
     <title>Inscrever-se com o Apple</title>
 </head>
 <body style="background-color: white;">
+
     <main class="container-apple">
+        <!-- Container para "Cabeçalho/Título" -->
         <div class="cabecalho-apple">
             <img src="img/icone-apple.svg" width="20px">
             <h4>Conta Apple</h4>
         </div>
+
         <div class="cabecalho-apple2">
             <img src="img/twitter-logo-2.svg" width="92px" style="border-radius: 15px;">
             <p>Use sua Conta Apple para iniciar sessão em X.</p>
         </div>
 
-        <div class="cadastro-apple">
-            <div class="campoApple">
+        <!-- Área para Login -->
+        <div class="login-apple" id="login">
 
-            <div class="campoApple">
-                <input type="email" id="email" placeholder=" " />
-                <label for="email">Email:</label>
+            <!-- Email -->
+                <div class="campoApple">
+                    <input type="email" id="email" placeholder=" " />
+                    <label for="email">Email:</label>
+                </div>
+                <br>
+            <!-- Senha -->
+                <div class="campoApple">
+                    <input type="password" id="senha" placeholder=" " />
+                    <label for="senha">Senha:</label>
+                </div>
+                  <!-- Botão para Avançar -->
+                <button type="submit" onclick="avancarCriar();login()" class="botaoAvancar">
+                    Avançar
+                </button>
             </div>
-            <br>
-            <div class="campoApple">
-                <input type="password" id="senha" placeholder=" " />
-                <label for="senha">Senha:</label>
-            </div>
-
-            <a href="boas-vindas.html" style="text-decoration: none;"><button onclick="avançarCriar()" class="avancar-branco">
-                Avançar
-            </button></a>
-        </div>
+            <!-- Link para a página de Criar Conta -->
         <p class="p-nao-tem-conta">Não tem uma conta no X? Crie uma conta <a href="criar-conta.html">aqui</a>.</p>
     </main>
 
+    <!-- Footer Decorativo -->
     <footer>
         <nav>
             <a href="#">Ajuda</a>
@@ -46,6 +52,6 @@
             <a href="#">Termos</a>
         </nav>
     </footer>
+    
 </body>
-
 </html>

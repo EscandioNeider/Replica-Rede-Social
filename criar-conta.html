@@ -1,98 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/geral.css">
     <script src="geral.js"></script>
     <title>Cadastro</title>
-    <style>
-        .criarConta input:focus {
-            border-color: #359df1;
-        }
-        
-        .criarConta label {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 14px;
-            color: #707070;
-            pointer-events: none;
-            transition: 0.2s ease;
-        }
-        
-        .criarConta label {
-            font-size: 16px; 
-            color: #707070;
-            position: absolute; 
-            top: 10px; 
-            left: 10px; 
-            transition: all 0.3s ease;
-            background-color: transparent; 
-            padding: 0;
-        }
-        
-        .criarConta input:focus + label,
-        .criarConta input:not(:placeholder-shown) + label {
-            font-size: 12px;
-            color: #359df1; 
-            top: -8px; 
-            background-color: #000; 
-            padding: 0 4px; 
-        }
-        
-        .char-counter {
-            position: absolute;
-            top: -5px; 
-            right: 10px;
-            font-size: 10px;
-            color: #707070;
-            background-color: #000;
-            padding: 2px;
-        }
-    </style>
 </head>
 <body>
     <main>
-            <div class="criarConta" id="criarConta">
-                <h1>Criar sua conta</h1>
-                <br>
-                <div class="campo">
-                    <input type="text" id="nome" maxlength="50" oninput="updateCounter('nome')" placeholder=" " />
-                    <label for="nome">Nome:</label>
-                    <span class="char-counter" id="char-counter-nome">0 / 50</span>
-                </div>
-                <br>
-                <div class="campo">
-                    <input type="text" id="sobrenome" maxlength="50" oninput="updateCounter('sobrenome')" placeholder=" " />
-                    <label for="sobrenome">Sobrenome:</label>
-                    <span class="char-counter" id="char-counter-sobrenome">0 / 50</span>
-                </div>
-                <br>
-                <div class="campo">
-                    <input type="text" id="rg" maxlength="12" oninput="updateCounter('rg')" placeholder=" " />
-                    <label for="rg">RG:</label>
-                    <span class="char-counter" id="char-counter-rg">0 / 12</span>
-                </div>
-                <br>
-                <div class="campo">
-                    <input type="email" id="email" maxlength="100" oninput="updateCounter('email')" placeholder=" " />
-                    <label for="email">Email:</label>
-                    <span class="char-counter" id="char-counter-email">0 / 30</span>
-                </div>
-                <br>
-                <div class="campo">
-                    <input type="password" id="senha" maxlength="20" oninput="updateCounter('senha')" placeholder=" " />
-                    <label for="senha">Senha:</label>
-                    <span class="char-counter" id="char-counter-senha">0 / 20</span>
-                </div>
-        
-                <a href="boas-vindas.html" style="text-decoration: none;"><button onclick="avançarCriar()" class="botaoAvancar">
-                    Avançar
-                </button></a>
-                <p class="p-nao-tem-conta">Já tem uma conta no X?<a href="entrar.html">Entre</a>.</p>
+        <div class="criarConta" id="cadastro">
+            <h1>Criar sua conta</h1>
+            <br>
+            <!-- Nome -->
+            <div class="campo">
+                <input type="text" id="nome" maxlength="50" oninput="updateCounter('nome')" placeholder=" " required>
+                <label for="nome">Nome:</label>
+                <span class="char-counter" id="char-counter-nome">0 / 50</span>
             </div>
-           
+            <br>
+            <!-- Sobrenome -->
+            <div class="campo">
+                <input type="text" id="sobrenome" maxlength="50" oninput="updateCounter('sobrenome')" placeholder=" " required>
+                <label for="sobrenome">Sobrenome:</label>
+                <span class="char-counter" id="char-counter-sobrenome">0 / 50</span>
+            </div>
+            <br>
+            <!-- RG -->
+            <div class="campo">
+                <input type="text" id="rg" maxlength="15" oninput="updateCounter('rg')" placeholder=" " required>
+                <label for="rg">RG:</label>
+                <span class="char-counter" id="char-counter-rg">0 / 15</span>
+            </div>
+            <br>
+            <!-- Email -->
+            <div class="campo">
+                <input type="email" id="email" maxlength="100" oninput="updateCounter('email')" placeholder=" " required>
+                <label for="email">Email:</label>
+                <span class="char-counter" id="char-counter-email">0 / 30</span>
+            </div>
+            <br>
+            <!-- Senha -->
+            <div class="campo">
+                <input type="password" id="senha" maxlength="20" oninput="updateCounter('senha')" placeholder=" " required>
+                <label for="senha">Senha:</label>
+                <span class="char-counter" id="char-counter-senha">0 / 20</span>
+            </div>
+            <!-- Botão para avançar -->
+            <button type="submit" onclick="avancarCriar();cadastro()" class="botaoAvancar">
+                Avançar
+            </button>
+                
+            <p class="p-nao-tem-conta">Já tem uma conta no X? Volte para a <a href="index.html">home</a>.</p>
+        </div>      
     </main>
 </body>
 </html>

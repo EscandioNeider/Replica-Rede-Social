@@ -17,7 +17,7 @@ function redirecionar() {
     if (selectedUser === "bruno") {
         window.location.href = "admin.html"; // Redireciona para a página de admin
     } else {
-        window.location.href = "index.html"; // Redireciona para a página de boas-vindas
+        window.location.href = "boas-vindas.html"; // Redireciona para a página de boas-vindas
     }
 }
 

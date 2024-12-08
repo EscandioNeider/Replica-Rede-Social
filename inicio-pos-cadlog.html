@@ -139,7 +139,7 @@
                 <img src="img/avatar.svg" alt="">
             </div>
            
-                <input class="sentindo-texto" type="text" placeholder="O que está acontecendo?">
+                <textarea class="sentindo-texto" style="resize: none;" placeholder="O que está acontecendo?"></textarea>
             </div>
             <div class="itens-sentindo">
                 <!-- Mídias -->
@@ -189,8 +189,65 @@
             
             <!-- Tweets -->
             <div class="tweets">
-
                 <!-- Tweet 1 -->
+                <div class="tweet">
+                    <div class="imagem-usuario">
+                        <img src="img/perfil-bruno.png" alt="Imagem do usuário">
+                    </div>
+                    <div class="tweet-textos">
+                        <div class="usuario">
+                            <strong>Bruno Messias</strong>
+                            <p>@brunoMessias37 · 1min</p>
+                        </div>
+                        <div class="tweet-conteudo">
+                            <span>Como isto funciona?! <br>
+                            <a href="#">@elonmusk</a>, i need support.</span>
+                        </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tweet 2 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/melhorDeADS.png" alt="Imagem do usuário">
@@ -198,15 +255,56 @@
                     <div class="tweet-textos">
                         <div class="usuario">
                             <strong>serMaravilhoso</strong>
-                            <p>@melhorDeADS · 2min</p>
+                            <p>@melhorDeADS · 4min</p>
                         </div>
                         <div class="tweet-conteudo">
                             <span>que chegue as férias logo para eu não fazer nada 🙌🙌🙌</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
                 
-                    <!-- Tweet 2 -->
+                    <!-- Tweet 3 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/isoca-rosbife.jpg" alt="Imagem do usuário">
@@ -219,10 +317,51 @@
                         <div class="tweet-conteudo">
                             <span>gente meu deus isso aqui é minha vida aff veyr como pode</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 3 -->
+                <!-- Tweet 4 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/tavinho-pouco-joelho.jpg" alt="Imagem do usuário">
@@ -238,10 +377,51 @@
                                 <img src="img/tavinho-img-twt.png" alt="">
                             </div>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 4 -->
+                <!-- Tweet 5 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/mahracutaia.png" alt="Imagem do usuário">
@@ -254,10 +434,51 @@
                         <div class="tweet-conteudo">
                             <span>finalmente eu acabe esse projeto, não aguentava mais</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 5 -->
+                <!-- Tweet 6 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/isoca-rosbife.jpg" alt="Imagem do usuário">
@@ -270,10 +491,51 @@
                         <div class="tweet-conteudo">
                             <span>gente um mendigo me chamou de v*dia, tipo???????</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 6 -->
+                <!-- Tweet 7 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/Halford-JudasPriest.png" alt="Imagem do usuário">
@@ -286,10 +548,51 @@
                         <div class="tweet-conteudo">
                             <span>Rob Halford abriu caminho no heavy metal sendo quem <br> ele é... 🤘🌈</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
                  
-                <!-- Tweet 7 -->
+                <!-- Tweet 8 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/perfil-bruno.png" alt="Imagem do usuário">
@@ -302,10 +605,51 @@
                         <div class="tweet-conteudo">
                             <span>👀...</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 8 -->
+                <!-- Tweet 9 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/musiquets.jpg" alt="Imagem do usuário">
@@ -323,10 +667,51 @@
                                 apaixonada por Roberto de Carvalho, que todo mundo sabe que foi 
                                 <br> o amor da vida dela</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 9 -->
+                <!-- Tweet 10 -->
                 <div class="tweet"> 
                     <div class="imagem-usuario">
                         <img src="img/melhorDeADS.png" alt="Imagem do usuário">
@@ -340,10 +725,51 @@
                             <span>af vey, o tanto que eu amo minha namorada>>> <br>
                             eu te amo muito namorada, vou te dar um buque amanha</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 10 -->
+                <!-- Tweet 11 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/tavinho-pouco-joelho.jpg" alt="Imagem do usuário">
@@ -351,16 +777,57 @@
                     <div class="tweet-textos">
                         <div class="usuario">
                             <strong>Tavinho Pouco Joelho</strong>
-                            <p>@tavinchorapraex · 6min</p>
+                            <p>@tavinchorapraex · 20min</p>
                         </div>
                         <div class="tweet-conteudo">
                             <span>I just wanna rewind I haven't seen you in a long time<br>
                                 You got me feeling soooo lonely</span>
                         </div>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tweet 11 -->
+                <!-- Tweet 12 -->
                 <div class="tweet">
                     <div class="imagem-usuario">
                         <img src="img/mahracutaia.png" alt="Imagem do usuário">
@@ -373,50 +840,77 @@
                         <div class="tweet-conteudo">
                             <span>sera q alguem  vai gostar dessa bosta?</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Tweet 12 -->
-                <div class="tweet">
-                    <div class="imagem-usuario">
-                        <img src="img/perfil-bruno.png" alt="Imagem do usuário">
-                    </div>
-                    <div class="tweet-textos">
-                        <div class="usuario">
-                            <strong>Bruno Messias</strong>
-                            <p>@brunoMessias37 · 14min</p>
-                        </div>
-                        <div class="tweet-conteudo">
-                            <span>Como isto funciona?! <br>
-                            <a href="#">@elonmusk</a>, i need support.</span>
+                        <div class="icones-tweet">
+                            <!-- Comentários -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 1.751 10 c 0 -4.42 3.584 -8 8.005 -8 h 4.366 c 4.49 0 8.129 3.64 8.129 8.13 c 0 2.96 -1.607 5.68 -4.196 7.11 l -8.054 4.46 v -3.69 h -0.067 c -4.49 0.1 -8.183 -3.51 -8.183 -8.01 Z m 8.005 -6 c -3.317 0 -6.005 2.69 -6.005 6 c 0 3.37 2.77 6.08 6.138 6.01 l 0.351 -0.01 h 1.761 v 2.3 l 5.087 -2.81 c 1.951 -1.08 3.163 -3.13 3.163 -5.36 c 0 -3.39 -2.744 -6.13 -6.129 -6.13 H 9.756 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Retweetar -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 4.5 3.88 l 4.432 4.14 l -1.364 1.46 L 5.5 7.55 V 16 c 0 1.1 0.896 2 2 2 H 13 v 2 H 7.5 c -2.209 0 -4 -1.79 -4 -4 V 7.55 L 1.432 9.48 L 0.068 8.02 L 4.5 3.88 Z M 16.5 6 H 11 V 4 h 5.5 c 2.209 0 4 1.79 4 4 v 8.45 l 2.068 -1.93 l 1.364 1.46 l -4.432 4.14 l -4.432 -4.14 l 1.364 -1.46 l 2.068 1.93 V 8 c 0 -1.1 -0.896 -2 -2 -2 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Curtir -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 16.697 5.5 c -1.222 -0.06 -2.679 0.51 -3.89 2.16 l -0.805 1.09 l -0.806 -1.09 C 9.984 6.01 8.526 5.44 7.304 5.5 c -1.243 0.07 -2.349 0.78 -2.91 1.91 c -0.552 1.12 -0.633 2.78 0.479 4.82 c 1.074 1.97 3.257 4.27 7.129 6.61 c 3.87 -2.34 6.052 -4.64 7.126 -6.61 c 1.111 -2.04 1.03 -3.7 0.477 -4.82 c -0.561 -1.13 -1.666 -1.84 -2.908 -1.91 Z m 4.187 7.69 c -1.351 2.48 -4.001 5.12 -8.379 7.67 l -0.503 0.3 l -0.504 -0.3 c -4.379 -2.55 -7.029 -5.19 -8.382 -7.67 c -1.36 -2.5 -1.41 -4.86 -0.514 -6.67 c 0.887 -1.79 2.647 -2.91 4.601 -3.01 c 1.651 -0.09 3.368 0.56 4.798 2.01 c 1.429 -1.45 3.146 -2.1 4.796 -2.01 c 1.954 0.1 3.714 1.22 4.601 3.01 c 0.896 1.81 0.846 4.17 -0.514 6.67 Z"/>
+                                </svg>
+                            </div>
+                            <!-- Ver -->
+                            <div class="icone-tweet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d= "M 8.75 21 V 3 h 2 v 18 h -2 Z M 18 21 V 8.5 h 2 V 21 h -2 Z M 4 21 l 0.004 -10 h 2 L 6 21 H 4 Z m 9.248 0 v -7 h 2 v 7 h -2 Z"/>
+                                </svg>
+                            </div>
+                            <!--  Icones Juntos -->
+                           <div class="sub-icones-juntos">
+                                 <!-- Salvar -->
+                                 <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 4 4.5 C 4 3.12 5.119 2 6.5 2 h 11 C 18.881 2 20 3.12 20 4.5 v 18.44 l -8 -5.71 l -8 5.71 V 4.5 Z M 6.5 4 c -0.276 0 -0.5 0.22 -0.5 0.5 v 14.56 l 6 -4.29 l 6 4.29 V 4.5 c 0 -0.28 -0.224 -0.5 -0.5 -0.5 h -11 Z"/>
+                                    </svg>
+                                </div>
+                                <!-- Compartilhar -->
+                                <div class="icone-tweet">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#71767b" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d= "M 12 2.59 l 5.7 5.7 l -1.41 1.42 L 13 6.41 V 16 h -2 V 6.41 l -3.3 3.3 l -1.41 -1.42 L 12 2.59 Z M 21 15 l -0.02 3.51 c 0 1.38 -1.12 2.49 -2.5 2.49 H 5.5 C 4.11 21 3 19.88 3 18.5 V 15 h 2 v 3.5 c 0 0.28 0.22 0.5 0.5 0.5 h 12.98 c 0.28 0 0.5 -0.22 0.5 -0.5 L 19 15 h 2 Z"/>
+                                    </svg>
+                                </div>
+                           </div> 
                         </div>
                     </div>
                 </div>
 
                 <div class="tweet-final">
                     <div class="tweet-conteudo">
-                        <span>Você chegou ao fim da página...</span>
+                        <span>·</span>
                     </div>
                     
                 </div>
             </div>
         </div>
-    
          
+        <!-- Grid 3 -->
         <div class="grid-3">
+            <!-- Barra de pesquisa -->
             <div id="divBusca">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6d7176" viewBox="0 0 20 20">
                     <path d="M 10.25 3.75 c -3.59 0 -6.5 2.91 -6.5 6.5 s 2.91 6.5 6.5 6.5 c 1.795 0 3.419 -0.726 4.596 -1.904 c 1.178 -1.177 1.904 -2.801 1.904 -4.596 c 0 -3.59 -2.91 -6.5 -6.5 -6.5 Z m -8.5 6.5 c 0 -4.694 3.806 -8.5 8.5 -8.5 s 8.5 3.806 8.5 8.5 c 0 1.986 -0.682 3.815 -1.824 5.262 l 4.781 4.781 l -1.414 1.414 l -4.781 -4.781 c -1.447 1.142 -3.276 1.824 -5.262 1.824 c -4.694 0 -8.5 -3.806 -8.5 -8.5 Z"></path>
                 </svg>
-                <input type="text" placeholder="Buscar..." />
+                <input class="barra-busca" type="search" placeholder="Buscar..." />
             </div>
-
+            <br>
+            <!-- Assine o Premium -->
             <div class="assine-premium">
                 <h1>Assine o Premium</h1>
                 <p>Assine para desbloquear novos recursos e, se elegível, receba uma parte da receita.</p>
                 <button class="botaoAzul">Inscrever-se</button>
            </div>
             <br>
+            <!-- O que está acontecendo? -->
            <div class="oq-acontecendo">
                 <h1>O que está acontecendo</h1>
 
@@ -445,11 +939,7 @@
                 </div>
            </div>
         </div>
-
-
     </div>
    </main>
-   
-
 </body>
 </html>

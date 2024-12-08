@@ -34,9 +34,9 @@ main{
     display: flex;
 }
 /* ---ADMIN--- */
-
 .container {
     max-width: 600px;
+    transform: translate(100%, 55%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ table th, table td {
 }
 /* ---BOAS-VINDAS--- */
 .msg-boasVindas {
-    transform: translate(190%, 100%);
+    transform: translate(220%, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +106,7 @@ table th, table td {
 .criarConta {
     background-color: #000000;
     max-width: 600px;
-    transform: translate(220%, 10%);
+    transform: translate(240%, 10%);
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -491,15 +491,17 @@ form{
     display: inline-block;
 }
 
+.sentindo-texto{
+    width: 460px;
+    border: none;
+    background-color: #000;
+    color: #e8e4e4;
+}
 
-input[type="text"]{
-    width: 400px;
+.sentindo-texto:focus{
     border: none;
 }
 
-.sentindo-texto{
-    width: 100%;
-}
 .itens-sentindo{
     padding: 10px 10px;
     display: flex;
@@ -581,6 +583,23 @@ flex-direction: column;
     object-fit: cover;
 }
 
+.icones-tweet{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 10px;
+}
+.sub-icones-juntos{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tweet-final{
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* Grid-3 */
 .grid-3{
@@ -588,9 +607,36 @@ flex-direction: column;
     right: 350px;
 }
 
-.divBusca input[type="text"]{
+#divBusca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1e1e1e;
     border: none;
     border-radius: 50px;
+    padding: 10px 16px;
+    width: 350px;
+    height: 35px;
+    max-width: 400px;
+}
+
+#divBusca svg {
+    fill: #6d7176;
+    width: 16px;
+    height: 16px;
+}
+
+.barra-busca {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.barra-busca::placeholder {
+    color: #6d7176;
 }
 
 .assine-premium{
@@ -621,7 +667,7 @@ flex-direction: column;
 
 .oq-acontecendo {
     display: flex;
-    width: 350px;
+    width: 340px;
     flex-direction: column;
     padding: 15px; 
     border: 1px solid #2f3336;

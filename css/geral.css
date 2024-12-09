@@ -36,7 +36,7 @@ main{
 /* ---ADMIN--- */
 .container {
     max-width: 600px;
-    transform: translate(100%, 55%);
+    transform: translate(100%, 0%);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ table th, table td {
 }
 /* ---BOAS-VINDAS--- */
 .msg-boasVindas {
-    transform: translate(220%, 100%);
+    transform: translate(190%, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,7 +604,7 @@ flex-direction: column;
 /* Grid-3 */
 .grid-3{
     position: fixed;
-    right: 350px;
+    right: 250px;
 }
 
 #divBusca {

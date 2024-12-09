@@ -92,10 +92,12 @@ function login() {
     });
 }
 
+// document.getElementById('searchForm').addEventListener('submit', () => 
+
 // ---ADMIN---
 // Busca de RG
-document.getElementById('searchForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+function buscaDeRG(){
+    // document.getElementById('searchForm').preventDefault();
     const rgInput = document.getElementById('searchInput').value;
 
     fetch('http://localhost:3000/cadastros')
@@ -103,7 +105,7 @@ document.getElementById('searchForm').addEventListener('submit', function (e) {
         .then(dados => {
             const registro = dados.find(item => item.rg === rgInput);
 
-            if (registro) {
+            if (registro) { 
                 document.getElementById('resultSection').style.display = 'block';
                 document.getElementById('rg').value = registro.rg;
                 document.getElementById('nome').value = registro.nome;
@@ -116,7 +118,7 @@ document.getElementById('searchForm').addEventListener('submit', function (e) {
             }
         })
         .catch(error => alert("Erro ao buscar RG: " + error));
-});
+};
 
 // Salvar alterações
 function salvarAlteracoes() {
@@ -125,38 +127,55 @@ function salvarAlteracoes() {
     const sobrenome = document.getElementById('sobrenome').value;
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
+    var id;
+    fetch(`http://localhost:3000/cadastros`)
+    .then(response => response.json())
+    .then(dados =>{
+        var pessoaEncontrada = dados.find(pessoa => pessoa.rg == rg)
 
-    fetch(`http://localhost:3000/cadastros/${rg}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, sobrenome, email, senha })
-    })
-        .then(() => {
-            alert('Alterações salvas com sucesso!');
-            location.reload();
+        if(pessoaEncontrada){
+            // console.log(pessoa)
+            id = pessoaEncontrada.id
+            console.log(id)
+        }
+
+        fetch(`http://localhost:3000/cadastros/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nome: nome, sobrenome:sobrenome, email:email, senha:senha, rg:rg })
         })
-        .catch(error => alert("Erro ao salvar alterações: " + error));
+            .then(() => {
+                alert('Alterações salvas com sucesso!');
+                location.reload();
+            })
+            .catch(error => alert("Erro ao salvar alterações: " + error));
+    });
+
+
 }
 
 // Carregar todos os cadastros
 window.onload = function () {
-    fetch("http://localhost:3000/cadastros")
-        .then(resposta => resposta.json())
-        .then(dados => {
-            const tabelaCorpo = document.getElementById("cadastro-login");
-            tabelaCorpo.innerHTML = ''; // Limpa tabela
-            // criar uma linha na tabela para cada registro
-            dados.forEach(item => {
-                tabelaCorpo.innerHTML += `
-                    <tr>
-                        <td>${item.nome}</td>
-                        <td>${item.sobrenome}</td>
-                        <td>${item.rg}</td>
-                        <td>${item.email}</td>
-                        <td>${item.senha}</td>
-                    </tr>`;
-            });
-        })
-        .catch(error => alert("Erro ao carregar cadastros: " + error));
+    if(location.href == 'http://localhost:5500/admin.html'){
+        fetch("http://localhost:3000/cadastros")
+            .then(resposta => resposta.json())
+            .then(dados => {
+                console.log(dados)
+                const tabelaCorpo = document.getElementById("cadastro-login");
+                // tabelaCorpo.innerHTML = ''; // Limpa tabela
+                // criar uma linha na tabela para cada registro
+                dados.forEach(item => {
+                    tabelaCorpo.innerHTML += `
+                        <tr>
+                            <td>${item.nome}</td>
+                            <td>${item.sobrenome}</td>
+                            <td>${item.rg}</td>
+                            <td>${item.email}</td>
+                            <td>${item.senha}</td>
+                        </tr>`;
+                });
+            })
+            .catch(error => alert("Erro ao carregar cadastros: " + error));
+    }
 };
 

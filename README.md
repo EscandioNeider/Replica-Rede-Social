@@ -11,7 +11,7 @@ Este projeto é uma reprodução do site Twitter (X), criado para fins de aprend
 - **JavaScript** para funcionalidades interativas.
 - **Json-Server** para simulação de um servidor e operações CRUD.
 
-## 📌 Tags:
+## 🏷️ Tags:
 `#educational-project`  `#site-clone`  `#html-css-javascript`  
 `#learning-purpose`  `#web-development`  `#no-affiliation`
 
